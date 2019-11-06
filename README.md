@@ -14,7 +14,7 @@ All raw and processed files are available at GEO **(GSE137986)**
 This is [code](https://github.com/MingyuYang-Yale/DBiT-seq/tree/master/Pre-processing) for reformating the read file for compatibility with st-pipeline.
 
 ## Differential expression
-This is [code](https://github.com/MingyuYang-Yale/DBiT-seq/tree/master/Differential%20expression) for differential expression analysis
+This is [code](https://github.com/MingyuYang-Yale/DBiT-seq/tree/master/Differential%20expression) for differential expression analysis.
 
 Figure 2G: use the “st_qa.py” scripts in st-pipeline to do the quality assemssment
 
