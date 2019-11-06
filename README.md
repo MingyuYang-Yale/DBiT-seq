@@ -11,9 +11,7 @@ This is a public repository for all code connected to DBiT-Seq (microfluidic Det
 All raw and processed files are available at GEO **(GSE137986)**
 
 ## Pre-processing
-This is code for reformating the read file for compatibility with st-pipeline.
-http://github.com - automatic!
-[GitHub](http://github.com)
+This is [code](https://github.com/MingyuYang-Yale/DBiT-seq/tree/master/Pre-processing) for reformating the read file for compatibility with st-pipeline.
 
 Figure 2G: use the “st_qa.py” scripts in st-pipeline to do the quality assemssment
 
