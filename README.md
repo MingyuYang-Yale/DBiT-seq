@@ -4,7 +4,7 @@ This is a public repository for all code connected to DBiT-Seq (microfluidic Det
 
 Please cite: Yang et al. High-Spatial-Resolution Multi-Omics Atlas Sequencing of Mouse Embryos via Deterministic Barcoding in Tissue. bioRxiv 2019: doi: https://doi.org/10.1101/788992.
 
-# The largest heading Schematic workflow
+## Schematic workflow
 ![Image of Yaktocat]
 (https://octodex.github.com/images/yaktocat.png)
 All raw and processed files are available at GEO: GSE137986
