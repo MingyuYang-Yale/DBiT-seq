@@ -8,7 +8,7 @@ This is a public repository for all code connected to DBiT-Seq (microfluidic Det
 
 <p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/workflow.png" alt="foo bar" title="train &amp; tracks" /></p>
 
-All raw and processed files are available at GEO: GSE137986
+All raw and processed files are available at GEO **(GSE137986)**
 
 Figure 2G: use the “st_qa.py” scripts in st-pipeline to do the quality assemssment
 
