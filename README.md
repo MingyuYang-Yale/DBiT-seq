@@ -12,7 +12,7 @@ All raw and processed files are available at GEO **(GSE137986)**
 
 ## Pre-processing
 
-<p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Datasets/barcodes.pdf" alt="foo bar" title="train &amp; tracks" /></p>
+<p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Datasets/barcodes.png" alt="foo bar" title="train &amp; tracks" /></p>
 
 Figure 2G: use the “st_qa.py” scripts in st-pipeline to do the quality assemssment
 
