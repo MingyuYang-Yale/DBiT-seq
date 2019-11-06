@@ -6,7 +6,7 @@ Please cite: Yang et al. High-Spatial-Resolution Multi-Omics Atlas Sequencing of
 
 ## Schematic workflow
 
-<p><img src="https://octodex.github.com/images/yaktocat.png" alt="foo bar" title="train &amp; tracks" /></p>
+<p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/workflow.png" alt="foo bar" title="train &amp; tracks" /></p>
 
 All raw and processed files are available at GEO: GSE137986
 
