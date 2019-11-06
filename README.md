@@ -12,7 +12,8 @@ All raw and processed files are available at GEO **(GSE137986)**
 
 ## Pre-processing
 This is code for reformating the read file for compatibility with st-pipeline.
-
+http://github.com - automatic!
+[GitHub](http://github.com)
 
 Figure 2G: use the “st_qa.py” scripts in st-pipeline to do the quality assemssment
 
