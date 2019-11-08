@@ -30,6 +30,7 @@ This is [code](https://github.com/MingyuYang-Yale/DBiT-seq/tree/master/Pre-proce
 |0719aL (10um-E10)|20,886,227|71.19;88.49|55.64;78.75|16,145,194|77.30|
 |0725e10aL (50um-E10)|23,210,325|77.48;93.09|63.90;86.97|18,963,401|81.7|
 
+
 <p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Pre-processing/QC.png" alt="foo bar" title="train &amp; tracks" /></p>
 
 ## Differential expression
