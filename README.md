@@ -20,7 +20,7 @@ This is [code](https://github.com/MingyuYang-Yale/DBiT-seq/tree/master/Pre-proce
 | 0702cL (50um-E10) | 162,684,631  |94.32;89.67|85.84;77.25|71,560,818|43.99|
 | 0713cL (25um-E10) | 108,133,036| 92.94;75.01| 81.72;54.96 | 27,520,710 | 25.45|
 | 0719cL (10um-E10) | 90,264,327 | 92.64;76.54 | 80.90;58.41 | 38,181,329| 42.30 |
-| 0725e10cL (50um-E10) | 128,523,896 | 93.12;79.41 | 81.57;63.63 | 55,201,084 | 42.95 |
+| 0725cL (50um-E10) | 128,523,896 | 93.12;79.41 | 81.57;63.63 | 55,201,084 | 42.95 |
 
 #### CITE-seq:
 |SampleID | Raw reads  | Q20 | Q30| With Barcode | Percentage(%)|
@@ -28,7 +28,7 @@ This is [code](https://github.com/MingyuYang-Yale/DBiT-seq/tree/master/Pre-proce
 |0702aL (50um-E10)|40,575,134|73.98;96.10|58.40;90.31|33,767,548|83.22|
 |0713aL (25um-E10)|37,020,491|70.42;86.46|53.31;75.27|30,241,039|81.69|
 |0719aL (10um-E10)|20,886,227|71.19;88.49|55.64;78.75|16,145,194|77.30|
-|0725e10aL (50um-E10)|23,210,325|77.48;93.09|63.90;86.97|18,963,401|81.7|
+|0725aL (50um-E10)|23,210,325|77.48;93.09|63.90;86.97|18,963,401|81.7|
 
 ## Differential expression
 This is [code](https://github.com/MingyuYang-Yale/DBiT-seq/tree/master/Differential%20expression) for differential expression analysis.
