@@ -23,7 +23,7 @@ perl reformat.pl -indir 01.rawdata -outdir 02.reformatdata -sample 10t
 ```
 ## Generate gene expression matrix
 
-To run the st-pipeline(v1.7.2) to generate the expression matrix file, run:
+To generate the expression matrix file, run st-pipeline(v1.7.2):
 
 ```
 sample=10t
