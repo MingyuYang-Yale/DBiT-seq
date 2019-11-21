@@ -14,9 +14,9 @@ All raw and processed files are available at GEO **(GSE137986)**
 This is [code](https://github.com/MingyuYang-Yale/DBiT-seq/tree/master/Pre-processing) for quality control and reformating the read file for compatibility with st-pipeline.
 
 In our datasets, read2 contains the barcode and UMI, so we need to reformat the read file for compatibility with st-pipeline.
-
+```
 perl [reformat.pl](https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Pre-processing/reformat.pl) -indir 01.rawdata -outdir 02.reformatdata -sample 0702cL
-
+```
 #### RNA-seq:
 |SampleID | Raw reads  | Q20 | Q30| With Barcode | Percentage(%)|
 | :---: | :---: | :---: | :---: | :---: | :---:   |
