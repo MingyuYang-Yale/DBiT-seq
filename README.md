@@ -21,6 +21,43 @@ To reformat the read file, run
 ```
 perl reformat.pl -indir 01.rawdata -outdir 02.reformatdata -sample 10t
 ```
+To run the st-pipeline to get the matrix file, run:
+
+```
+sample=$1
+FW=/gpfs/ysm/project/my393/Spatial_multi_omics/08052019/02.effectivedata/$sample/$sample.R1.fastq.gz
+RV=/gpfs/ysm/project/my393/Spatial_multi_omics/08052019/02.effectivedata/$sample/$sample.R2.fastq.gz
+MAP=/gpfs/ysm/project/my393/database/GRCm38_86/StarIndex
+ANN=/gpfs/ysm/project/my393/database/GRCm38_86/gencode.vM11.annotation.gtf
+CONT=/gpfs/ysm/project/my393/database/GRCm38_86/ncRNA/StarIndex
+ID=/gpfs/ysm/project/my393/Spatial_multi_omics/Our/00.database/barcodes.merge.sort.xls
+OUTPUT=/gpfs/ysm/project/my393/Spatial_multi_omics/08052019/03.stpipeline/$sample
+mkdir -p /gpfs/ysm/project/my393/Spatial_multi_omics/08052019/03.stpipeline/$sample
+TMP=/gpfs/ysm/project/my393/Spatial_multi_omics/08052019/03.stpipeline/$sample/tmp
+mkdir -p /gpfs/ysm/project/my393/Spatial_multi_omics/08052019/03.stpipeline/$sample/tmp
+EXP=$sample
+
+st_pipeline_run.py \
+  --output-folder $OUTPUT \
+  --temp-folder $TMP \
+  --umi-start-position 16 \
+  --umi-end-position 26 \
+  --ids $ID \
+  --ref-map $MAP \
+  --ref-annotation $ANN \
+  --expName $EXP \
+  --htseq-no-ambiguous \
+  --verbose \
+  --mapping-threads 16 \
+  --log-file $OUTPUT/${EXP}_log.txt \
+  --two-pass-mode \
+  --no-clean-up \
+  --contaminant-index $CONT \
+  --disable-clipping \
+  --min-length-qual-trimming 30 \
+  $FW $RV
+
+```
 
 ## Differential expression
 This is [code](https://github.com/MingyuYang-Yale/DBiT-seq/tree/master/Differential%20expression) for differential expression analysis.
