@@ -65,7 +65,7 @@ convertEnsemblToNames.py \
   --output /03.stpipeline/$sample/$sample\_stdata.updated.tsv \
   /03.stpipeline/$sample/$sample\_stdata.tsv
 ``` 
-To visulize the expression map, run a modified st_qa.py script:
+To visulize the expression map, run a modified [st_qa.py](https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Visualization/st_qa-new.py) script:
 ```
 st_qa-new.py --input-data /03.stpipeline/$sample/$sample\_stdata.updated.tsv
 ```
