@@ -21,7 +21,7 @@ To reformat the read file, run
 ```
 perl reformat.pl -indir 01.rawdata -outdir 02.reformatdata -sample 10t
 ```
-## generate gene expression matrix
+## Generate gene expression matrix
 
 To run the st-pipeline(v1.7.2) to generate the expression matrix file, run:
 
