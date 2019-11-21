@@ -16,6 +16,8 @@ This is [code](https://github.com/MingyuYang-Yale/DBiT-seq/tree/master/Pre-proce
 In our datasets, read2 contains the barcode and UMI, so we need to reformat the read file for compatibility with st-pipeline.
 <p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Pre-processing/schematic.png" alt="foo bar" title="train &amp; tracks" /></p>
 
+To reformat the read file, run
+
 ```
 perl reformat.pl -indir 01.rawdata -outdir 02.reformatdata -sample 10t
 ```
