@@ -10,26 +10,26 @@ Usage
         perl $0
         indir   <indir>
         outdir  <out_dir>
-        insertsize <insertsize>
+        sample  <sample>
 USAGE
 
-my ($indir,$outdir,$insertsize,$help);
+my ($indir,$outdir,$sample,$help);
 GetOptions(
     "indir=s"=>\$indir,
     "outdir=s"=>\$outdir,
-    "insertsize=s"=>\$insertsize,
+    "sample=s"=>\$sample,
 );
 
 die $usage if $help;
-die $usage unless  $indir && $outdir && $insertsize;
+die $usage unless  $indir && $outdir && $sample;
 
-`mkdir $outdir/$insertsize` unless(-d "$outdir/$insertsize");
+`mkdir $outdir/$sample` unless(-d "$outdir/$sample");
 
-open LOG,">$outdir/$insertsize/log" or die $!;
-print LOG "$insertsize filter primer begin at: ".`date`;
+open LOG,">$outdir/$sample/log" or die $!;
+print LOG "$sample filter primer begin at: ".`date`;
 
-chomp (my $file2 = `ls $indir/$insertsize/*R2_001.fastq.gz`);
-chomp (my $file1 = `ls $indir/$insertsize/*R1_001.fastq.gz`);
+chomp (my $file2 = `ls $indir/$sample/*R2_001.fastq.gz`);
+chomp (my $file1 = `ls $indir/$sample/*R1_001.fastq.gz`);
 
 chomp (my $barcodefile = `ls /gpfs/ysm/project/my393/Spatial_multi_omics/Our/00.database/barcode.xls`);
 
@@ -53,14 +53,14 @@ close IN;
 open IN_1,"<:gzip","$file1" or die $!;
 open IN_2,"<:gzip","$file2" or die $!;
 
-open OUT_1,">:gzip","$outdir/$insertsize/$insertsize.R1.fastq.gz" or die $!;
-open OUT_2,">:gzip","$outdir/$insertsize/$insertsize.R2.fastq.gz" or die $!;
+open OUT_1,">:gzip","$outdir/$sample/$sample.R1.fastq.gz" or die $!;
+open OUT_2,">:gzip","$outdir/$sample/$sample.R2.fastq.gz" or die $!;
 
-open OUT_3,">:gzip","$outdir/$insertsize/$insertsize.used.original.R1.fastq.gz" or die $!;
-open OUT_4,">:gzip","$outdir/$insertsize/$insertsize.used.original.R2.fastq.gz" or die $!;
+open OUT_3,">:gzip","$outdir/$sample/$sample.used.original.R1.fastq.gz" or die $!;
+open OUT_4,">:gzip","$outdir/$sample/$sample.used.original.R2.fastq.gz" or die $!;
 
-open OUT_5,">:gzip","$outdir/$insertsize/$insertsize.useless.R1.fastq.gz" or die $!;
-open OUT_6,">:gzip","$outdir/$insertsize/$insertsize.useless.R2.fastq.gz" or die $!;
+open OUT_5,">:gzip","$outdir/$sample/$sample.useless.R1.fastq.gz" or die $!;
+open OUT_6,">:gzip","$outdir/$sample/$sample.useless.R2.fastq.gz" or die $!;
 
 
         #---------------------------read in the reads information-----------------------#
@@ -131,4 +131,4 @@ my $title = "BarcodeA\tBarcodeB\tBarcodeAB\n";
 my $output1 = "$numA\t$numB\t$num\n";
 printf LOG $title;
 printf LOG $output1;
-print LOG "$insertsize filter primer end at: ".`date`;
+print LOG "$sample filter primer end at: ".`date`;
