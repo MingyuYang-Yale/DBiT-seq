@@ -1,4 +1,4 @@
-To do the quality control(QC) and statistacs for RNA-seq data, run
+To do the quality control(QC) and statistacs for RNA-seq/CITE-seq data, run
 
 ```
 perl qc.pl -indir 01.rawdata -outdir 02.stat -sample 10t
