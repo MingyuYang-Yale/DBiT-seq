@@ -25,8 +25,8 @@ To run the st-pipeline to get the matrix file, run:
 
 ```
 sample=$1
-FW=/02.effectivedata/$sample/$sample.R1.fastq.gz
-RV=/02.effectivedata/$sample/$sample.R2.fastq.gz
+FW=/02.reformatdata/$sample/$sample.R1.fastq.gz
+RV=/02.reformatdata/$sample/$sample.R2.fastq.gz
 MAP=/database/GRCm38_86/StarIndex
 ANN=/database/GRCm38_86/gencode.vM11.annotation.gtf
 CONT=/database/GRCm38_86/ncRNA/StarIndex
