@@ -25,16 +25,16 @@ To run the st-pipeline to get the matrix file, run:
 
 ```
 sample=$1
-FW=/gpfs/ysm/project/my393/Spatial_multi_omics/08052019/02.effectivedata/$sample/$sample.R1.fastq.gz
-RV=/gpfs/ysm/project/my393/Spatial_multi_omics/08052019/02.effectivedata/$sample/$sample.R2.fastq.gz
-MAP=/gpfs/ysm/project/my393/database/GRCm38_86/StarIndex
-ANN=/gpfs/ysm/project/my393/database/GRCm38_86/gencode.vM11.annotation.gtf
-CONT=/gpfs/ysm/project/my393/database/GRCm38_86/ncRNA/StarIndex
-ID=/gpfs/ysm/project/my393/Spatial_multi_omics/Our/00.database/barcodes.merge.sort.xls
-OUTPUT=/gpfs/ysm/project/my393/Spatial_multi_omics/08052019/03.stpipeline/$sample
-mkdir -p /gpfs/ysm/project/my393/Spatial_multi_omics/08052019/03.stpipeline/$sample
-TMP=/gpfs/ysm/project/my393/Spatial_multi_omics/08052019/03.stpipeline/$sample/tmp
-mkdir -p /gpfs/ysm/project/my393/Spatial_multi_omics/08052019/03.stpipeline/$sample/tmp
+FW=/02.effectivedata/$sample/$sample.R1.fastq.gz
+RV=/02.effectivedata/$sample/$sample.R2.fastq.gz
+MAP=/database/GRCm38_86/StarIndex
+ANN=/database/GRCm38_86/gencode.vM11.annotation.gtf
+CONT=/database/GRCm38_86/ncRNA/StarIndex
+ID=barcodes.xls
+OUTPUT=/03.stpipeline/$sample
+mkdir -p /03.stpipeline/$sample
+TMP=/03.stpipeline/$sample/tmp
+mkdir -p /03.stpipeline/$sample/tmp
 EXP=$sample
 
 st_pipeline_run.py \
