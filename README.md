@@ -69,7 +69,10 @@ To visulize the expression map, run a modified [st_qa-new.py](https://github.com
 ```
 st_qa-new.py --input-data /03.stpipeline/$sample/$sample\_stdata.updated.tsv
 ```
-
+To derive the expression map of individual mRNA genes, we conducted global normalization by “Scran” and then use log scale transformation:
+```
+st_data_plotter.py --normalization Scran --show-genes Notch1 --image-files 10t.png --counts-table-files 10t.under-tissue.tsv --use-log-scale --dot-size 8
+```
 ## Spatial differential expression analysis
 This is [code](https://github.com/MingyuYang-Yale/DBiT-seq/tree/master/Differential%20expression) for differential expression analysis.
 
