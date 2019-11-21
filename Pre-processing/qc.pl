@@ -1,4 +1,4 @@
-#!/gpfs/ycga/project/fas/fan/my393/software/perl-5.28.1/mybuild/bin/perl
+#!/usr/bin/perl
 use strict;
 use warnings;
 use Getopt::Long;
@@ -11,7 +11,7 @@ Usage
 	perl	$0
 	indir	<the inout father dir of the samples>
 	outdir	<the output father dir of the samples>
-	insertsize	<insertsize>
+	sample	<sample>
 	quality <solexa-quals/phred64-quals> [ default 33 ]
 	end     <Single end = 1/Pair end = 2> [ default 2 ]
 	N_rate  <N_rate> [ default 0.1 ]
@@ -49,14 +49,14 @@ $end ||=2;
 
 $indir = trim_slash($indir);
 $outdir = trim_slash($outdir);
-`mkdir $outdir/$insertsize` unless(-d "$outdir/$insertsize");
+`mkdir $outdir/$sample` unless(-d "$outdir/$sample");
 
 
 #-create the Log file
 
-open LOG,">$outdir/$insertsize/log" or die $!;
-print LOG "$insertsize filter begin at: ".`date`;
-print STDERR "$insertsize filter begin at: ".`date`;
+open LOG,">$outdir/$sample/log" or die $!;
+print LOG "$sample filter begin at: ".`date`;
+print STDERR "$sample filter begin at: ".`date`;
 
 
 #-get the adapters list
@@ -565,8 +565,8 @@ sub caculate_rates{
 	#($output2 .= "Duplication remove $remove_duplication_num\n") if ($end ==2); 
 	printf LOG $output2;
 
-	printf LOG "$insertsize filter end at: ".`date`;
-	printf STDERR "$insertsize filter end at: ".`date`;
+	printf LOG "$sample filter end at: ".`date`;
+	printf STDERR "$sample filter end at: ".`date`;
 	close LOG;
 }
 
