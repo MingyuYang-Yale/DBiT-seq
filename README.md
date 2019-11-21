@@ -68,7 +68,7 @@ convertEnsemblToNames.py \
   --/03.stpipeline/$sample/$sample\_stdata.tsv
 ```
 
-## Differential expression
+## Spatial differential expression analysis
 This is [code](https://github.com/MingyuYang-Yale/DBiT-seq/tree/master/Differential%20expression) for differential expression analysis.
 
 Figure 2G: use the “st_qa.py” scripts in st-pipeline to do the quality assemssment
