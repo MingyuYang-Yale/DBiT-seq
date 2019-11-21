@@ -39,25 +39,7 @@ TMP=/03.stpipeline/$sample/tmp
 mkdir -p /03.stpipeline/$sample/tmp
 EXP=$sample
 
-st_pipeline_run.py \
-  --output-folder $OUTPUT \
-  --temp-folder $TMP \
-  --umi-start-position 16 \
-  --umi-end-position 26 \
-  --ids $ID \
-  --ref-map $MAP \
-  --ref-annotation $ANN \
-  --expName $EXP \
-  --htseq-no-ambiguous \
-  --verbose \
-  --mapping-threads 16 \
-  --log-file $OUTPUT/${EXP}_log.txt \
-  --two-pass-mode \
-  --no-clean-up \
-  --contaminant-index $CONT \
-  --disable-clipping \
-  --min-length-qual-trimming 30 \
-  $FW $RV
+st_pipeline_run.py --output-folder $OUTPUT --temp-folder $TMP --umi-start-position 16 --umi-end-position 26 --ids $ID --ref-map $MAP --ref-annotation $ANN --expName $EXP --htseq-no-ambiguous --verbose --mapping-threads 16 --log-file $OUTPUT/${EXP}_log.txt --two-pass-mode --no-clean-up --contaminant-index $CONT --disable-clipping --min-length-qual-trimming 30 $FW $RV
 ```
 ```
 convertEnsemblToNames.py \
