@@ -17,7 +17,7 @@ In our datasets, read2 contains the barcode and UMI, so we need to reformat the 
 <p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Pre-processing/schematic.png" alt="foo bar" title="train &amp; tracks" /></p>
 
 ```
-perl reformat.pl -indir 01.rawdata -outdir 02.reformatdata -sample 0702cL
+perl reformat.pl -indir 01.rawdata -outdir 02.reformatdata -sample 10t
 ```
 #### RNA-seq:
 |SampleID | Raw reads  | Q20 | Q30| With Barcode | Percentage(%)|
