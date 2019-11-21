@@ -24,7 +24,7 @@ perl reformat.pl -indir 01.rawdata -outdir 02.reformatdata -sample 10t
 To run the st-pipeline to get the matrix file, run:
 
 ```
-sample=$1
+sample=10t
 FW=/02.reformatdata/$sample/$sample.R1.fastq.gz
 RV=/02.reformatdata/$sample/$sample.R2.fastq.gz
 MAP=/database/GRCm38_86/StarIndex
@@ -58,12 +58,12 @@ st_pipeline_run.py \
   $FW $RV
 ```
 ```
-st_qa.py --input-data /03.stpipeline/$1/$1\_stdata.tsv
+st_qa.py --input-data /03.stpipeline/$sample/$sample\_stdata.tsv
 
 convertEnsemblToNames.py \
   --annotation /database/GRCm38_86/gencode.vM11.annotation.gtf \
-  --output /03.stpipeline/$1/$1\_stdata.updated.tsv \
-  --/03.stpipeline/$1/$1\_stdata.tsv
+  --output /03.stpipeline/$sample/$sample\_stdata.updated.tsv \
+  --/03.stpipeline/$sample/$sample\_stdata.tsv
 ```
 
 ## Differential expression
