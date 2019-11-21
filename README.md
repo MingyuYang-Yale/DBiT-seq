@@ -57,6 +57,10 @@ st_pipeline_run.py \
   --min-length-qual-trimming 30 \
   $FW $RV
 
+st_qa.py --input-data /03.stpipeline/$1/$1\_stdata.tsv
+
+convertEnsemblToNames.py --annotation /database/GRCm38_86/gencode.vM11.annotation.gtf --output /03.stpipeline/$1/$1\_stdata.updated.tsv /03.stpipeline/$1/$1\_stdata.tsv
+
 ```
 
 ## Differential expression
