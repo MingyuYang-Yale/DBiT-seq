@@ -15,6 +15,7 @@ This is [code](https://github.com/MingyuYang-Yale/DBiT-seq/tree/master/Pre-proce
 
 In our datasets, read2 contains the barcode and UMI, so we need to reformat the read file for compatibility with st-pipeline.
 
+perl [effictive.pl](https://github.com/MingyuYang-Yale/DBiT-seq/tree/master/Pre-processing/effictive.pl) -indir 01.rawdata -outdir 02.reformatdata -sample 0702cL
 
 #### RNA-seq:
 |SampleID | Raw reads  | Q20 | Q30| With Barcode | Percentage(%)|
