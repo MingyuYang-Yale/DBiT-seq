@@ -63,7 +63,7 @@ st_pipeline_run.py \
 convertEnsemblToNames.py \
   --annotation /database/GRCm38_86/gencode.vM11.annotation.gtf \
   --output /03.stpipeline/$sample/$sample\_stdata.updated.tsv \
-  --/03.stpipeline/$sample/$sample\_stdata.tsv
+  /03.stpipeline/$sample/$sample\_stdata.tsv
 ``` 
 To visulize the expression map, run a modified st_qa.py script:
 ```
