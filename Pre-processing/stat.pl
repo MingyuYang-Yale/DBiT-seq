@@ -10,25 +10,25 @@ Usage
         perl $0
         indir   <indir>
         outdir  <out_dir>
-        insertsize <insertsize>
+        sample  <sample>
 USAGE
 
-my ($indir,$outdir,$insertsize,$help);
+my ($indir,$outdir,$sample,$help);
 GetOptions(
 	"indir=s"=>\$indir,
 	"outdir=s"=>\$outdir,
-	"insertsize=s"=>\$insertsize,
+	"sample=s"=>\$sample,
 );
 
 die $usage if $help;
-die $usage unless  $indir && $outdir && $insertsize;
+die $usage unless  $indir && $outdir && $sample;
 
-`mkdir $outdir/$insertsize` unless(-d "$outdir/$insertsize");
+`mkdir $outdir/$sample` unless(-d "$outdir/$sample");
 
-open LOG,">$outdir/$insertsize/$insertsize.log" or die $!;
-print LOG "$insertsize statistics begin at: ".`date`;
+open LOG,">$outdir/$sample/$sample.log" or die $!;
+print LOG "$sample statistics begin at: ".`date`;
 
-chomp (my $file = `ls $indir/$insertsize/*R2_001.fastq.gz`);
+chomp (my $file = `ls $indir/$sample/*R2_001.fastq.gz`);
 
 my $primer = "CAAGCGTTGGCTTCTCGCATCT";
 my $linker = "ATCCACGTGCTTGAGAGGCCAGAGCATTCG";
@@ -157,8 +157,8 @@ while(1)
 close IN;
 
 
-open OUT_1,">$outdir/$insertsize/barcodeA.stat.xls" or die $!;
-open OUT_2,">$outdir/$insertsize/barcodeB.stat.xls" or die $!;
+open OUT_1,">$outdir/$sample/barcodeA.stat.xls" or die $!;
+open OUT_2,">$outdir/$sample/barcodeB.stat.xls" or die $!;
 
 foreach my $key(sort {$barcodeA{$a}[1]<=>$barcodeA{$b}[1]} keys %barcodeA)
 {
@@ -172,16 +172,16 @@ foreach my $key(sort {$barcodeB{$a}[1]<=>$barcodeB{$b}[1]} keys %barcodeB)
 
 
 my $barcode_plot_A = <<FIGURE;
-        data<-read.table("$outdir/$insertsize/barcodeA.stat.xls")
-        pdf("$outdir/$insertsize/$insertsize.barcodeA.pdf",width=8,height=8)
-	barplot(data[,3],col="blue",main="$insertsize Barcode A(1-50)")
+        data<-read.table("$outdir/$sample/barcodeA.stat.xls")
+        pdf("$outdir/$sample/$sample.barcodeA.pdf",width=8,height=8)
+	barplot(data[,3],col="blue",main="$sample Barcode A(1-50)")
 	dev.off()
 FIGURE
 
 my $barcode_plot_B = <<FIGURE;
-        data<-read.table("$outdir/$insertsize/barcodeB.stat.xls")
-        pdf("$outdir/$insertsize/$insertsize.barcodeB.pdf",width=8,height=8)
-        barplot(data[,3],col="blue",main="$insertsize Barcode B(1-50)")
+        data<-read.table("$outdir/$sample/barcodeB.stat.xls")
+        pdf("$outdir/$sample/$sample.barcodeB.pdf",width=8,height=8)
+        barplot(data[,3],col="blue",main="$sample Barcode B(1-50)")
         dev.off()
 FIGURE
         open R,"|/gpfs/ysm/project/my393/software/R-3.5.3/mybuild/bin/R  --vanilla --slave" or die $!;
@@ -196,11 +196,11 @@ my $linker_percentage = ($exact_linker_num + $mismatch_linker_num)*100/$all_num;
 my $barcode_percentage = $numAB*100/$all_num;
 
 print LOG "SampleID\tTotal Reads\texact_primer\tmismatch_primer\tPercentage(%)\texact_linker\tmismatch_linker\tPercentage(%)\tBarcodeA\tBarcodeB\tBarcodeAB\tPercentage(%)\n";
-print LOG "$insertsize\t$all_num\t$exact_primer_num\t$mismatch_primer_num\t";
+print LOG "$sample\t$all_num\t$exact_primer_num\t$mismatch_primer_num\t";
 printf LOG "%.2f",$primer_percentage;
 print LOG "\t$exact_linker_num\t$mismatch_linker_num\t";
 printf LOG "%.2f",$linker_percentage;
 print LOG "\t$numA\t$numB\t$numAB\t";
 printf LOG "%.2f","$barcode_percentage";
 print LOG "\n";
-print LOG "$insertsize statistics  end at: ".`date`;
+print LOG "$sample statistics  end at: ".`date`;
