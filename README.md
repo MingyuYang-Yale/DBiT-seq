@@ -67,7 +67,7 @@ convertEnsemblToNames.py \
 ``` 
 To visulize the expression map, run a modified st_qa.py script:
 ```
-st_qa.py --input-data /03.stpipeline/$sample/$sample\_stdata.updated.tsv
+st_qa-new.py --input-data /03.stpipeline/$sample/$sample\_stdata.updated.tsv
 ```
 
 ## Spatial differential expression analysis
