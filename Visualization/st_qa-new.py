@@ -8,6 +8,7 @@ The scripts writes stats and generates
 some plots in the folder that is run. 
 
 @Author Jose Fernandez Navarro <jose.fernandez.navarro@scilifelab.se>
+@Mingyu Yang <mingyu.yang@yale.edu> modified the original script to adapt DBiT-seq spatial RNA-seq data. 
 """
 import matplotlib
 matplotlib.use('Agg')
