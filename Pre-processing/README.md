@@ -1,3 +1,11 @@
+To do the quality control(QC) and statistacs for RNA-seq data, run
+
+```
+perl qc.pl -indir 01.rawdata -outdir 02.stat -sample 10t
+perl stat.pl -indir 01.rawdata -outdir 02.stat -sample 10t
+```
+
+
 #### RNA-seq:
 |SampleID | Raw reads  | Q20 | Q30| With Barcode | Percentage(%)|
 | :---: | :---: | :---: | :---: | :---: | :---:   |
