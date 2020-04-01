@@ -77,7 +77,7 @@ st_data_plotter.py --normalization Scran --show-genes Notch1 --image-files 10t.p
 
 ## Image alignment in Adobe Illustrator(AI)
 Now that we have an stdata file containing all the gene expression data for all the squares, we would like to remove all the squares that are not located under the tissue.
-
+<p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/alignment.png" alt="foo bar" title="train &amp; tracks" /></p>
 
 ## Spatial differential expression analysis
 This is [code](https://github.com/MingyuYang-Yale/DBiT-seq/tree/master/Differential%20expression) for differential expression analysis.
