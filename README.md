@@ -77,6 +77,13 @@ st_data_plotter.py --normalization Scran --show-genes Notch1 --image-files 10t.p
 
 ## Image alignment in Adobe Illustrator(AI)
 Now that we have an stdata file containing all the gene expression data for all the squares, we would like to remove all the squares that are not located under the tissue.
+
+1. Transform the location and it's reads count from the expression matrix to Scalable Vector Graphics(SVG) format. SVG images and their related behaviors are defined in XML text files, which means they can be freely edited, searched, indexed and scripted. 
+2. Open the image file and SVG file in Illustror, manully alignment the squares on image and SVG files.
+3. Remove all the squares that are not located under the tissue.
+4. Save the SVG image into a XML text file, which is contain all the locations of the squares that under the tissue.
+5. Extract these location from the expression matrix data. 
+
 <p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/alignment.png" alt="foo bar" title="train &amp; tracks" /></p>
 
 ## Spatial differential expression analysis
