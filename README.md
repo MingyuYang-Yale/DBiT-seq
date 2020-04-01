@@ -80,7 +80,7 @@ Now that we have an stdata file containing all the gene expression data for all 
 
 1. Transform the location and it's reads count from the expression matrix to Scalable Vector Graphics(SVG) format. SVG images and their related behaviors are defined in XML text files, which means they can be freely edited, searched, indexed and scripted. 
 2. Open the image file and SVG file in Illustror, manully alignment the squares on image and SVG files.
-3. Use Selection Tool in AI to select all all the squares that are not located under the tissue, and delete them.
+3. Turn off visibility of the image layer, use Selection Tool to select all all the squares that are not located under the tissue, and delete them.
 4. Save the SVG image into a XML text file, which is contain all the locations of the squares that under the tissue.
 5. Extract these location from the expression matrix data. 
 
