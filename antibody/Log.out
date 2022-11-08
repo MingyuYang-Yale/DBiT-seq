@@ -1,0 +1,454 @@
+STAR version=2.7.0e_0314
+STAR compilation time,server,dir=Tue Mar 19 00:52:24 EDT 2019 farnam1.farnam.hpc.yale.internal:/gpfs/ysm/project/my393/software/STAR/source
+##### DEFAULT parameters:
+versionGenome                     2.7.0d
+parametersFiles                   -   
+sysShell                          -
+runMode                           alignReads
+runThreadN                        1
+runDirPerm                        User_RWX
+runRNGseed                        777
+genomeDir                         ./GenomeDir/
+genomeLoad                        NoSharedMemory
+genomeFastaFiles                  -   
+genomeChainFiles                  -   
+genomeSAindexNbases               14
+genomeChrBinNbits                 18
+genomeSAsparseD                   1
+genomeSuffixLengthMax             18446744073709551615
+genomeFileSizes                   0   
+genomeConsensusFile               -
+readFilesType                     Fastx   
+readFilesIn                       Read1   Read2   
+readFilesPrefix                   -
+readFilesCommand                  -   
+readMatesLengthsIn                NotEqual
+readMapNumber                     18446744073709551615
+readNameSeparator                 /   
+inputBAMfile                      -
+bamRemoveDuplicatesType           -
+bamRemoveDuplicatesMate2basesN    0
+limitGenomeGenerateRAM            31000000000
+limitIObufferSize                 150000000
+limitOutSAMoneReadBytes           100000
+limitOutSJcollapsed               1000000
+limitOutSJoneRead                 1000
+limitBAMsortRAM                   0
+limitSjdbInsertNsj                1000000
+limitNreadsSoft                   18446744073709551615
+outFileNamePrefix                 ./
+outTmpDir                         -
+outTmpKeep                        None
+outStd                            Log
+outReadsUnmapped                  None
+outQSconversionAdd                0
+outMultimapperOrder               Old_2.4
+outSAMtype                        SAM   
+outSAMmode                        Full
+outSAMstrandField                 None
+outSAMattributes                  Standard   
+outSAMunmapped                    None   
+outSAMorder                       Paired
+outSAMprimaryFlag                 OneBestScore
+outSAMreadID                      Standard
+outSAMmapqUnique                  255
+outSAMflagOR                      0
+outSAMflagAND                     65535
+outSAMattrRGline                  -   
+outSAMheaderHD                    -   
+outSAMheaderPG                    -   
+outSAMheaderCommentFile           -
+outBAMcompression                 1
+outBAMsortingThreadN              0
+outBAMsortingBinsN                50
+outSAMfilter                      None   
+outSAMmultNmax                    18446744073709551615
+outSAMattrIHstart                 1
+outSAMtlen                        1
+outSJfilterReads                  All
+outSJfilterCountUniqueMin         3   1   1   1   
+outSJfilterCountTotalMin          3   1   1   1   
+outSJfilterOverhangMin            30   12   12   12   
+outSJfilterDistToOtherSJmin       10   0   5   10   
+outSJfilterIntronMaxVsReadN       50000   100000   200000   
+outWigType                        None   
+outWigStrand                      Stranded   
+outWigReferencesPrefix            -
+outWigNorm                        RPM   
+outFilterType                     Normal
+outFilterMultimapNmax             10
+outFilterMultimapScoreRange       1
+outFilterScoreMin                 0
+outFilterScoreMinOverLread        0.66
+outFilterMatchNmin                0
+outFilterMatchNminOverLread       0.66
+outFilterMismatchNmax             10
+outFilterMismatchNoverLmax        0.3
+outFilterMismatchNoverReadLmax    1
+outFilterIntronMotifs             None
+outFilterIntronStrands            RemoveInconsistentStrands
+clip5pNbases                      0   
+clip3pNbases                      0   
+clip3pAfterAdapterNbases          0   
+clip3pAdapterSeq                  -   
+clip3pAdapterMMp                  0.1   
+winBinNbits                       16
+winAnchorDistNbins                9
+winFlankNbins                     4
+winAnchorMultimapNmax             50
+winReadCoverageRelativeMin        0.5
+winReadCoverageBasesMin           0
+scoreGap                          0
+scoreGapNoncan                    -8
+scoreGapGCAG                      -4
+scoreGapATAC                      -8
+scoreStitchSJshift                1
+scoreGenomicLengthLog2scale       -0.25
+scoreDelBase                      -2
+scoreDelOpen                      -2
+scoreInsOpen                      -2
+scoreInsBase                      -2
+seedSearchLmax                    0
+seedSearchStartLmax               50
+seedSearchStartLmaxOverLread      1
+seedPerReadNmax                   1000
+seedPerWindowNmax                 50
+seedNoneLociPerWindow             10
+seedMultimapNmax                  10000
+seedSplitMin                      12
+alignIntronMin                    21
+alignIntronMax                    0
+alignMatesGapMax                  0
+alignTranscriptsPerReadNmax       10000
+alignSJoverhangMin                5
+alignSJDBoverhangMin              3
+alignSJstitchMismatchNmax         0   -1   0   0   
+alignSplicedMateMapLmin           0
+alignSplicedMateMapLminOverLmate    0.66
+alignWindowsPerReadNmax           10000
+alignTranscriptsPerWindowNmax     100
+alignEndsType                     Local
+alignSoftClipAtReferenceEnds      Yes
+alignEndsProtrude                 0   ConcordantPair   
+alignInsertionFlush               None
+peOverlapNbasesMin                0
+peOverlapMMp                      0.01
+chimSegmentMin                    0
+chimScoreMin                      0
+chimScoreDropMax                  20
+chimScoreSeparation               10
+chimScoreJunctionNonGTAG          -1
+chimMainSegmentMultNmax           10
+chimJunctionOverhangMin           20
+chimOutType                       Junctions   
+chimFilter                        banGenomicN   
+chimSegmentReadGapMax             0
+chimMultimapNmax                  0
+chimMultimapScoreRange            1
+chimNonchimScoreDropMin           20
+chimOutJunctionFormat             0   
+sjdbFileChrStartEnd               -   
+sjdbGTFfile                       -
+sjdbGTFchrPrefix                  -
+sjdbGTFfeatureExon                exon
+sjdbGTFtagExonParentTranscript    transcript_id
+sjdbGTFtagExonParentGene          gene_id
+sjdbOverhang                      100
+sjdbScore                         2
+sjdbInsertSave                    Basic
+varVCFfile                        -
+waspOutputMode                    None
+quantMode                         -   
+quantTranscriptomeBAMcompression    1
+quantTranscriptomeBan             IndelSoftclipSingleend
+twopass1readsN                    18446744073709551615
+twopassMode                       None
+soloType                          None
+soloCBstart                       1
+soloUMIstart                      17
+soloCBlen                         16
+soloUMIlen                        10
+soloBarcodeReadLength             1
+soloCBwhitelist                   -
+soloStrand                        Forward
+soloOutFileNames                  Solo.out/   genes.tsv   barcodes.tsv   matrix.mtx   matrixSJ.mtx   
+soloFeatures                      Gene   
+soloUMIdedup                      1MM_All   
+##### Command Line:
+/gpfs/ysm/project/my393/software/STAR/source/STAR --runThreadN 16 --runMode genomeGenerate --genomeDir /gpfs/ysm/project/my393/database/antibody/StarIndex --genomeFastaFiles /gpfs/ysm/project/my393/database/antibody/antibody.fa --sjdbGTFfile /gpfs/ysm/project/my393/database/antibody/genecode.gtf --genomeSAindexNbases 3
+##### Initial USER parameters from Command Line:
+###### All USER parameters from Command Line:
+runThreadN                    16     ~RE-DEFINED
+runMode                       genomeGenerate     ~RE-DEFINED
+genomeDir                     /gpfs/ysm/project/my393/database/antibody/StarIndex     ~RE-DEFINED
+genomeFastaFiles              /gpfs/ysm/project/my393/database/antibody/antibody.fa        ~RE-DEFINED
+sjdbGTFfile                   /gpfs/ysm/project/my393/database/antibody/genecode.gtf     ~RE-DEFINED
+genomeSAindexNbases           3     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runMode                           genomeGenerate
+runThreadN                        16
+genomeDir                         /gpfs/ysm/project/my393/database/antibody/StarIndex
+genomeFastaFiles                  /gpfs/ysm/project/my393/database/antibody/antibody.fa   
+genomeSAindexNbases               3
+sjdbGTFfile                       /gpfs/ysm/project/my393/database/antibody/genecode.gtf
+
+-------------------------------
+##### Final effective command line:
+/gpfs/ysm/project/my393/software/STAR/source/STAR   --runMode genomeGenerate   --runThreadN 16   --genomeDir /gpfs/ysm/project/my393/database/antibody/StarIndex   --genomeFastaFiles /gpfs/ysm/project/my393/database/antibody/antibody.fa      --genomeSAindexNbases 3   --sjdbGTFfile /gpfs/ysm/project/my393/database/antibody/genecode.gtf
+
+##### Final parameters after user input--------------------------------:
+versionGenome                     2.7.0d
+parametersFiles                   -   
+sysShell                          -
+runMode                           genomeGenerate
+runThreadN                        16
+runDirPerm                        User_RWX
+runRNGseed                        777
+genomeDir                         /gpfs/ysm/project/my393/database/antibody/StarIndex
+genomeLoad                        NoSharedMemory
+genomeFastaFiles                  /gpfs/ysm/project/my393/database/antibody/antibody.fa   
+genomeChainFiles                  -   
+genomeSAindexNbases               3
+genomeChrBinNbits                 18
+genomeSAsparseD                   1
+genomeSuffixLengthMax             18446744073709551615
+genomeFileSizes                   0   
+genomeConsensusFile               -
+readFilesType                     Fastx   
+readFilesIn                       Read1   Read2   
+readFilesPrefix                   -
+readFilesCommand                  -   
+readMatesLengthsIn                NotEqual
+readMapNumber                     18446744073709551615
+readNameSeparator                 /   
+inputBAMfile                      -
+bamRemoveDuplicatesType           -
+bamRemoveDuplicatesMate2basesN    0
+limitGenomeGenerateRAM            31000000000
+limitIObufferSize                 150000000
+limitOutSAMoneReadBytes           100000
+limitOutSJcollapsed               1000000
+limitOutSJoneRead                 1000
+limitBAMsortRAM                   0
+limitSjdbInsertNsj                1000000
+limitNreadsSoft                   18446744073709551615
+outFileNamePrefix                 ./
+outTmpDir                         -
+outTmpKeep                        None
+outStd                            Log
+outReadsUnmapped                  None
+outQSconversionAdd                0
+outMultimapperOrder               Old_2.4
+outSAMtype                        SAM   
+outSAMmode                        Full
+outSAMstrandField                 None
+outSAMattributes                  Standard   
+outSAMunmapped                    None   
+outSAMorder                       Paired
+outSAMprimaryFlag                 OneBestScore
+outSAMreadID                      Standard
+outSAMmapqUnique                  255
+outSAMflagOR                      0
+outSAMflagAND                     65535
+outSAMattrRGline                  -   
+outSAMheaderHD                    -   
+outSAMheaderPG                    -   
+outSAMheaderCommentFile           -
+outBAMcompression                 1
+outBAMsortingThreadN              0
+outBAMsortingBinsN                50
+outSAMfilter                      None   
+outSAMmultNmax                    18446744073709551615
+outSAMattrIHstart                 1
+outSAMtlen                        1
+outSJfilterReads                  All
+outSJfilterCountUniqueMin         3   1   1   1   
+outSJfilterCountTotalMin          3   1   1   1   
+outSJfilterOverhangMin            30   12   12   12   
+outSJfilterDistToOtherSJmin       10   0   5   10   
+outSJfilterIntronMaxVsReadN       50000   100000   200000   
+outWigType                        None   
+outWigStrand                      Stranded   
+outWigReferencesPrefix            -
+outWigNorm                        RPM   
+outFilterType                     Normal
+outFilterMultimapNmax             10
+outFilterMultimapScoreRange       1
+outFilterScoreMin                 0
+outFilterScoreMinOverLread        0.66
+outFilterMatchNmin                0
+outFilterMatchNminOverLread       0.66
+outFilterMismatchNmax             10
+outFilterMismatchNoverLmax        0.3
+outFilterMismatchNoverReadLmax    1
+outFilterIntronMotifs             None
+outFilterIntronStrands            RemoveInconsistentStrands
+clip5pNbases                      0   
+clip3pNbases                      0   
+clip3pAfterAdapterNbases          0   
+clip3pAdapterSeq                  -   
+clip3pAdapterMMp                  0.1   
+winBinNbits                       16
+winAnchorDistNbins                9
+winFlankNbins                     4
+winAnchorMultimapNmax             50
+winReadCoverageRelativeMin        0.5
+winReadCoverageBasesMin           0
+scoreGap                          0
+scoreGapNoncan                    -8
+scoreGapGCAG                      -4
+scoreGapATAC                      -8
+scoreStitchSJshift                1
+scoreGenomicLengthLog2scale       -0.25
+scoreDelBase                      -2
+scoreDelOpen                      -2
+scoreInsOpen                      -2
+scoreInsBase                      -2
+seedSearchLmax                    0
+seedSearchStartLmax               50
+seedSearchStartLmaxOverLread      1
+seedPerReadNmax                   1000
+seedPerWindowNmax                 50
+seedNoneLociPerWindow             10
+seedMultimapNmax                  10000
+seedSplitMin                      12
+alignIntronMin                    21
+alignIntronMax                    0
+alignMatesGapMax                  0
+alignTranscriptsPerReadNmax       10000
+alignSJoverhangMin                5
+alignSJDBoverhangMin              3
+alignSJstitchMismatchNmax         0   -1   0   0   
+alignSplicedMateMapLmin           0
+alignSplicedMateMapLminOverLmate    0.66
+alignWindowsPerReadNmax           10000
+alignTranscriptsPerWindowNmax     100
+alignEndsType                     Local
+alignSoftClipAtReferenceEnds      Yes
+alignEndsProtrude                 0   ConcordantPair   
+alignInsertionFlush               None
+peOverlapNbasesMin                0
+peOverlapMMp                      0.01
+chimSegmentMin                    0
+chimScoreMin                      0
+chimScoreDropMax                  20
+chimScoreSeparation               10
+chimScoreJunctionNonGTAG          -1
+chimMainSegmentMultNmax           10
+chimJunctionOverhangMin           20
+chimOutType                       Junctions   
+chimFilter                        banGenomicN   
+chimSegmentReadGapMax             0
+chimMultimapNmax                  0
+chimMultimapScoreRange            1
+chimNonchimScoreDropMin           20
+chimOutJunctionFormat             0   
+sjdbFileChrStartEnd               -   
+sjdbGTFfile                       /gpfs/ysm/project/my393/database/antibody/genecode.gtf
+sjdbGTFchrPrefix                  -
+sjdbGTFfeatureExon                exon
+sjdbGTFtagExonParentTranscript    transcript_id
+sjdbGTFtagExonParentGene          gene_id
+sjdbOverhang                      100
+sjdbScore                         2
+sjdbInsertSave                    Basic
+varVCFfile                        -
+waspOutputMode                    None
+quantMode                         -   
+quantTranscriptomeBAMcompression    1
+quantTranscriptomeBan             IndelSoftclipSingleend
+twopass1readsN                    18446744073709551615
+twopassMode                       None
+soloType                          None
+soloCBstart                       1
+soloUMIstart                      17
+soloCBlen                         16
+soloUMIlen                        10
+soloBarcodeReadLength             1
+soloCBwhitelist                   -
+soloStrand                        Forward
+soloOutFileNames                  Solo.out/   genes.tsv   barcodes.tsv   matrix.mtx   matrixSJ.mtx   
+soloFeatures                      Gene   
+soloUMIdedup                      1MM_All   
+----------------------------------------
+
+Finished loading and checking parameters
+Aug 06 18:53:52 ... starting to generate Genome files
+/gpfs/ysm/project/my393/database/antibody/antibody.fa : chr # 0  "ICAM2" chrStart: 0
+/gpfs/ysm/project/my393/database/antibody/antibody.fa : chr # 1  "KIT" chrStart: 262144
+/gpfs/ysm/project/my393/database/antibody/antibody.fa : chr # 2  "EPCR" chrStart: 524288
+/gpfs/ysm/project/my393/database/antibody/antibody.fa : chr # 3  "NPR1" chrStart: 786432
+/gpfs/ysm/project/my393/database/antibody/antibody.fa : chr # 4  "KDR" chrStart: 1048576
+/gpfs/ysm/project/my393/database/antibody/antibody.fa : chr # 5  "ITGA2B" chrStart: 1310720
+/gpfs/ysm/project/my393/database/antibody/antibody.fa : chr # 6  "PTPRC" chrStart: 1572864
+/gpfs/ysm/project/my393/database/antibody/antibody.fa : chr # 7  "CD55orDAF" chrStart: 1835008
+/gpfs/ysm/project/my393/database/antibody/antibody.fa : chr # 8  "CD63" chrStart: 2097152
+/gpfs/ysm/project/my393/database/antibody/antibody.fa : chr # 9  "ESAM" chrStart: 2359296
+/gpfs/ysm/project/my393/database/antibody/antibody.fa : chr # 10  "FCER1A" chrStart: 2621440
+/gpfs/ysm/project/my393/database/antibody/antibody.fa : chr # 11  "FOLR2" chrStart: 2883584
+/gpfs/ysm/project/my393/database/antibody/antibody.fa : chr # 12  "LY6AorLY6E" chrStart: 3145728
+/gpfs/ysm/project/my393/database/antibody/antibody.fa : chr # 13  "MADCAM1" chrStart: 3407872
+/gpfs/ysm/project/my393/database/antibody/antibody.fa : chr # 14  "KLRB1" chrStart: 3670016
+/gpfs/ysm/project/my393/database/antibody/antibody.fa : chr # 15  "NOTCH1" chrStart: 3932160
+/gpfs/ysm/project/my393/database/antibody/antibody.fa : chr # 16  "P2RY12" chrStart: 4194304
+/gpfs/ysm/project/my393/database/antibody/antibody.fa : chr # 17  "SIGLEC" chrStart: 4456448
+/gpfs/ysm/project/my393/database/antibody/antibody.fa : chr # 18  "LY76" chrStart: 4718592
+/gpfs/ysm/project/my393/database/antibody/antibody.fa : chr # 19  "ITGA4" chrStart: 4980736
+/gpfs/ysm/project/my393/database/antibody/antibody.fa : chr # 20  "EPCAM" chrStart: 5242880
+/gpfs/ysm/project/my393/database/antibody/antibody.fa : chr # 21  "PanendothelialCellAntigen" chrStart: 5505024
+Estimated genome size=206767168   5767168   201000000
+GstrandBit=32
+Number of SA indices: 660
+Aug 06 18:53:52 ... starting to sort Suffix Array. This may take a long time...
+Number of chunks: 16;   chunks size limit: 352 bytes
+Aug 06 18:53:52 ... sorting Suffix Array chunks and saving them to disk...
+Writing 344 bytes into /gpfs/ysm/project/my393/database/antibody/StarIndex/SA_0 ; empty space on disk = 152424668987392 bytes ... done
+Writing 344 bytes into /gpfs/ysm/project/my393/database/antibody/StarIndex/SA_5 ; empty space on disk = 152424668987392 bytes ... done
+Writing 352 bytes into /gpfs/ysm/project/my393/database/antibody/StarIndex/SA_6 ; empty space on disk = 152424668987392 bytes ... done
+Writing 336 bytes into /gpfs/ysm/project/my393/database/antibody/StarIndex/SA_1 ; empty space on disk = 152424668987392 bytes ... done
+Writing 352 bytes into /gpfs/ysm/project/my393/database/antibody/StarIndex/SA_8 ; empty space on disk = 152424668987392 bytes ... done
+Writing 352 bytes into /gpfs/ysm/project/my393/database/antibody/StarIndex/SA_3 ; empty space on disk = 152424668987392 bytes ... done
+Writing 336 bytes into /gpfs/ysm/project/my393/database/antibody/StarIndex/SA_7 ; empty space on disk = 152424668987392 bytes ... done
+Writing 336 bytes into /gpfs/ysm/project/my393/database/antibody/StarIndex/SA_2 ; empty space on disk = 152424668987392 bytes ... done
+Writing 352 bytes into /gpfs/ysm/project/my393/database/antibody/StarIndex/SA_4 ; empty space on disk = 152424668987392 bytes ... done
+Writing 96 bytes into /gpfs/ysm/project/my393/database/antibody/StarIndex/SA_15 ; empty space on disk = 152424668987392 bytes ... done
+Writing 336 bytes into /gpfs/ysm/project/my393/database/antibody/StarIndex/SA_13 ; empty space on disk = 152424668987392 bytes ... done
+Writing 352 bytes into /gpfs/ysm/project/my393/database/antibody/StarIndex/SA_14 ; empty space on disk = 152424668987392 bytes ... done
+Writing 344 bytes into /gpfs/ysm/project/my393/database/antibody/StarIndex/SA_12 ; empty space on disk = 152424668987392 bytes ... done
+Writing 352 bytes into /gpfs/ysm/project/my393/database/antibody/StarIndex/SA_10 ; empty space on disk = 152424668987392 bytes ... done
+Writing 352 bytes into /gpfs/ysm/project/my393/database/antibody/StarIndex/SA_11 ; empty space on disk = 152424668987392 bytes ... done
+Writing 344 bytes into /gpfs/ysm/project/my393/database/antibody/StarIndex/SA_9 ; empty space on disk = 152424668987392 bytes ... done
+Aug 06 18:53:52 ... loading chunks from disk, packing SA...
+Aug 06 18:53:52 ... finished generating suffix array
+Aug 06 18:53:52 ... generating Suffix Array index
+Aug 06 18:53:52 ... completed Suffix Array index
+Aug 06 18:53:52 ..... processing annotations GTF
+Processing pGe.sjdbGTFfile=/gpfs/ysm/project/my393/database/antibody/genecode.gtf, found:
+		21 transcripts
+		22 exons (non-collapsed)
+		1 collapsed junctions
+Aug 06 18:53:52 ..... finished GTF processing
+Aug 06 18:53:52   Loaded database junctions from the GTF file: /gpfs/ysm/project/my393/database/antibody/genecode.gtf: 1 total junctions
+
+Aug 06 18:53:52   Finished preparing junctions
+Aug 06 18:53:52 ..... inserting junctions into the genome indices
+Aug 06 18:53:52   Finished SA search: number of new junctions=1, old junctions=0
+Aug 06 18:53:52   Finished sorting SA indicesL nInd=60
+Genome size with junctions=5767369  5767168   201
+GstrandBit1=32   GstrandBit=32
+Aug 06 18:53:52   Finished inserting junction indices
+Aug 06 18:53:52   Finished SAi
+Aug 06 18:53:52 ..... finished inserting junctions into genome
+Aug 06 18:53:52 ... writing Genome to disk ...
+Writing 5767369 bytes into /gpfs/ysm/project/my393/database/antibody/StarIndex/Genome ; empty space on disk = 152424668987392 bytes ... done
+SA size in bytes: 2973
+Aug 06 18:53:52 ... writing Suffix Array to disk ...
+Writing 2973 bytes into /gpfs/ysm/project/my393/database/antibody/StarIndex/SA ; empty space on disk = 152424660598784 bytes ... done
+Aug 06 18:53:52 ... writing SAindex to disk
+Writing 8 bytes into /gpfs/ysm/project/my393/database/antibody/StarIndex/SAindex ; empty space on disk = 152424660598784 bytes ... done
+Writing 32 bytes into /gpfs/ysm/project/my393/database/antibody/StarIndex/SAindex ; empty space on disk = 152424660598784 bytes ... done
+Writing 371 bytes into /gpfs/ysm/project/my393/database/antibody/StarIndex/SAindex ; empty space on disk = 152424660598784 bytes ... done
+Aug 06 18:53:52 ..... finished successfully
+DONE: Genome generation, EXITING

@@ -1,0 +1,16 @@
+### /gpfs/ysm/project/my393/software/STAR/source/STAR   --runMode genomeGenerate   --runThreadN 16   --genomeDir /gpfs/ysm/project/my393/database/antibody/StarIndex   --genomeFastaFiles /gpfs/ysm/project/my393/database/antibody/antibody.fa      --genomeSAindexNbases 3   --sjdbGTFfile /gpfs/ysm/project/my393/database/antibody/genecode.gtf
+### GstrandBit 32
+versionGenome	2.7.0d
+genomeFastaFiles	/gpfs/ysm/project/my393/database/antibody/antibody.fa 
+genomeSAindexNbases	3
+genomeChrBinNbits	18
+genomeSAsparseD	1
+sjdbOverhang	100
+sjdbFileChrStartEnd	- 
+sjdbGTFfile	/gpfs/ysm/project/my393/database/antibody/genecode.gtf
+sjdbGTFchrPrefix	-
+sjdbGTFfeatureExon	exon
+sjdbGTFtagExonParentTranscript	transcript_id
+sjdbGTFtagExonParentGene	gene_id
+sjdbInsertSave	Basic
+genomeFileSizes	5767369 2973
