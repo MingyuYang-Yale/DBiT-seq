@@ -18,5 +18,5 @@ Then you can write a code to extract the before 8bp and after 8bp, to check if t
 
 
 ```
-perl extract-barcode-ab-fromlinker.public.pl -indir ./ -outdir ./ -sample test
+perl extract-barcode-ab-fromlinker.pl -indir ./ -outdir ./ -sample test
 ```
