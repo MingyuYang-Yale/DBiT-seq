@@ -9,7 +9,7 @@ conda create -y -n PERLLIB
 conda activate PERLLIB
 ```
 ```
-conda install -y bioconda::perl-perlio
+conda install -y bioconda::perl-perlio-gzip
 ```
 ```
 perl extract-linker.pl -indir ./ -outdir ./ -sample test
