@@ -19,7 +19,7 @@ To extract the barcodes, run:
 ```
 perl extract-barcodes-withlinker.pl -indir ./ -outdir ./ -sample test
 ```
-After running the script, you will find the output file:
+After running the script, you will find the output file in the output folder: **test.barcodes.fq.gz**
 
 A log file containing details number of barcode B and barcode B will also be generated in the output directory:
 
