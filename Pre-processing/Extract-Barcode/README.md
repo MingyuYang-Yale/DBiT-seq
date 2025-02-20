@@ -16,3 +16,7 @@ As shown in the result, the start position of the linker varies, appearing at po
 
 Then you can write a code to extract the before 8bp and after 8bp, to check if the sequence are same as the barcodes. 
 
+
+```
+perl extract-barcode-ab-fromlinker.public.pl -indir ./ -outdir ./ -sample test
+```
