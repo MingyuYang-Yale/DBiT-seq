@@ -5,7 +5,7 @@ Since the linker is 30bp long, we allow up to 3 mismatches for tolerance. You ca
 ```
 perl extract-linker.pl -indir ./ -outdir ./ -sample test
 ```
-To demostrate, we use the test dataset, which is a subset of DBit-seq normal data with 10000 reads.
+For this demonstration, we use a test dataset consisting of 10,000 reads, which is a subset of DBit-seq normal data.
 
 Here is an example of the output:
 
@@ -13,12 +13,14 @@ Here is an example of the output:
 
 As shown in the result, the start position of the linker varies, appearing at positions 39, 40, and 41 in the test dataset.
 
-Then we can extract the barcode A and B before and after the linker:
+Once the linker is identified, Barcode A and Barcode B can be extracted by retrieving the 8bp sequences immediately before and after the linker.
+
+To extract the barcodes, run:
 ```
 perl extract-barcodes-withlinker.pl -indir ./ -outdir ./ -sample test
 ```
-you will find a file name "test.barcodes.fq.gz" in the output folder.
+After running the script, you will find the output file:
 
-You can also find a "log" file in the output folder.
+A log file containing details number of barcode B and barcode B will also be generated in the output directory:
 
 <p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Pre-processing/Extract-Barcode/stat.png" alt="foo bar" title="train &amp; tracks" /></p>
