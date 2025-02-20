@@ -5,7 +5,7 @@ First, identify the linker sequence (a 30bp region between Barcode A and Barcode
 Since the linker is 30bp long, we allow up to 3 mismatches for tolerance. You can run the extraction using the following command:
 
 ```
-perl extract-linker.pl -indir ./ -outdir ./ -sample test
+perl step1-extract-linker.pl -indir ./ -outdir ./ -sample test
 ```
 
 Here is an example of the output:
@@ -18,5 +18,5 @@ Then you can write a code to extract the before 8bp and after 8bp, to check if t
 
 
 ```
-perl extract-barcode-ab-fromlinker.pl -indir ./ -outdir ./ -sample test
+perl step2-extract-barcode-ab-withlinker.pl -indir ./ -outdir ./ -sample test
 ```
