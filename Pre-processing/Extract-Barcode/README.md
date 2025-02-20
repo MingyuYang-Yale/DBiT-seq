@@ -1,6 +1,4 @@
-To extract Barcode A and Barcode B based on patterns rather than fixed positions, we first identify the linker sequence—a 30bp region located between the two barcodes.
-
-Once the linker is located, Barcode A and Barcode B can be extracted by retrieving the 8bp sequences immediately before and after the linker.
+To extract Barcode A and Barcode B based on patterns rather than fixed positions, we first identify the linker sequence—a 30bp region located between the two barcodes. Once the linker is located, Barcode A and Barcode B can be extracted by retrieving the 8bp sequences immediately before and after the linker.
 
 Since the linker is 30bp long, we allow up to 3 mismatches for tolerance. You can run the extraction using the following command:
 
