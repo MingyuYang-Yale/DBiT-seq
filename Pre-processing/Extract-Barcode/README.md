@@ -3,13 +3,13 @@ To extract Barcode A and Barcode B based on patterns rather than fixed positions
 Since the linker is 30bp long, we allow up to 3 mismatches for tolerance. You can run the extraction using the following command:
 
 ```
-conda create -n PERLLIB
+conda create -y -n PERLLIB
 ```
 ```
 conda activate PERLLIB
 ```
 ```
-conda install bioconda::perl-perlio
+conda install -y bioconda::perl-perlio
 ```
 ```
 perl extract-linker.pl -indir ./ -outdir ./ -sample test
