@@ -1,6 +1,6 @@
 This is one way to extract Barcode A and Barcode B based on patterns rather than fixed positions:
 
-1: Extracting the Linker First
+Extracting the Linker First
 
 One approach is to first identify the linker sequence (a 30bp region between Barcode A and Barcode B). Once the linker is located, you can extract Barcode A and Barcode B by checking the 8bp sequences immediately before and after the linker.
 
