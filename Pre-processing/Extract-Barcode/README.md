@@ -1,4 +1,4 @@
-There are two ways to extract Barcode A and Barcode B based on patterns rather than fixed positions:
+This is one way to extract Barcode A and Barcode B based on patterns rather than fixed positions:
 
 1: Extracting the Linker First
 
