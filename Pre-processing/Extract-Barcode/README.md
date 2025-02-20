@@ -21,6 +21,6 @@ perl extract-barcodes-withlinker.pl -indir ./ -outdir ./ -sample test
 ```
 After running the script, you will find the output file in the output folder: **test.barcodes.fq.gz**
 
-A log file containing details number of barcode B and barcode B will also be generated in the output directory:
+A log file containing details number of barcode A and barcode B will also be generated in the output directory:
 
 <p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Pre-processing/Extract-Barcode/stat.png" alt="foo bar" title="train &amp; tracks" /></p>
