@@ -1,4 +1,6 @@
-First, identify the linker sequence (a 30bp region between Barcode A and Barcode B). Once the linker is located, you can extract Barcode A and Barcode B by checking the 8bp sequences immediately before and after the linker.
+To extract Barcode A and Barcode B based on patterns rather than fixed positions, we first identify the linker sequence—a 30bp region located between the two barcodes.
+
+Once the linker is located, Barcode A and Barcode B can be extracted by retrieving the 8bp sequences immediately before and after the linker.
 
 Since the linker is 30bp long, we allow up to 3 mismatches for tolerance. You can run the extraction using the following command:
 
@@ -7,7 +9,7 @@ perl extract-linker.pl -indir ./ -outdir ./ -sample test
 ```
 For this demonstration, we use a test dataset consisting of 10,000 reads, which is a subset of DBit-seq normal data.
 
-Here is an example of the output:
+Example output:
 
 <p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Pre-processing/Extract-Barcode/result.png" alt="foo bar" title="train &amp; tracks" /></p>
 
@@ -19,7 +21,7 @@ To extract the barcodes, run:
 ```
 perl extract-barcodes-withlinker.pl -indir ./ -outdir ./ -sample test
 ```
-After running the script, you will find the output file in the output folder: **test.barcodes.fq.gz**
+After running the script, the data with both barcodes information will be saved in the output folder as: ```test.barcodes.fq.gz```
 
 A log file containing details number of barcode A and barcode B will also be generated in the output directory:
 
