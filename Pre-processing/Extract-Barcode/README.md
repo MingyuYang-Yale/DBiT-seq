@@ -3,8 +3,18 @@ To extract Barcode A and Barcode B based on patterns rather than fixed positions
 Since the linker is 30bp long, we allow up to 3 mismatches for tolerance. You can run the extraction using the following command:
 
 ```
+conda create -n PERLLIB
+```
+```
+conda activate PERLLIB
+```
+```
+conda install bioconda::perl-perlio
+```
+```
 perl extract-linker.pl -indir ./ -outdir ./ -sample test
 ```
+
 For this demonstration, we use a test dataset consisting of 10,000 reads, which is a subset of DBit-seq normal data.
 
 Example output:
