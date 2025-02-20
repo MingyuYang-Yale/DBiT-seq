@@ -1,10 +1,17 @@
-There are two ways to get BarcodeA and BarcodeB based on patterns rather than fixed positions:
+There are two ways to extract Barcode A and Barcode B based on patterns rather than fixed positions:
 
-1. You can extract the linker (the strings between Barcode A and Barcode B, 30bp) first, then you can check the before 8bp and after 8bp, to extract the barcode A and B.
-Since the linker is 30bp length, we can tolerate 3 mismatchs. you can run the code by the following command:
+1: Extracting the Linker First
+
+One approach is to first identify the linker sequence (a 30bp region between Barcode A and Barcode B). Once the linker is located, you can extract Barcode A and Barcode B by checking the 8bp sequences immediately before and after the linker.
+
+Since the linker is 30bp long, we allow up to 3 mismatches for tolerance. You can run the extraction using the following command:
+
 ```
 perl extract-linker.pl -indir ./ -outdir ./ -sample test
 ```
-Here is the result:
+
+Here is an example of the output:
+
 <p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Pre-processing/Extract-Barcode/result.png" alt="foo bar" title="train &amp; tracks" /></p>
-you can see, the start position of the linker is different, you can find 39,40,41 in the test result
+
+As shown in the result, the start position of the linker varies, appearing at positions 39, 40, and 41 in the test dataset.
