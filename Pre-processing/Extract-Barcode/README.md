@@ -23,7 +23,7 @@ Example output:
 
 As shown in the result, the start position of the linker varies, appearing at positions 39, 40, and 41 in the test dataset.
 
-Once the linker is identified, Barcode A and Barcode B can be extracted by retrieving the 8bp sequences immediately before and after the linker.
+Once the linker position is identified, the 8bp sequences immediately before and after the linker can be extracted and compared with our barcode sequences.
 
 To extract the barcodes, run:
 ```
