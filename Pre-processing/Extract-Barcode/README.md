@@ -18,6 +18,11 @@ perl extract-linker.v2.pl -indir ./ -outdir ./ -sample test
 For this demonstration, we use a test dataset consisting of 10,000 reads, which is a subset of DBit-seq normal data.
 
 Example output:
+<p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Pre-processing/Extract-Barcode/step1-output.png" alt="foo bar" title="train &amp; tracks" /></p>
+
+- ```test.with.linker.R1.fq.gz``` and ```test.with.linker.R2.fq.gz``` is the Read2 with identified linker.
+
+- ```test.without.linker.R1.fq.gz``` and ```test.without.linker.R2.fq.gz``` is the Read2 without identifiled linker, actually we can use this information to dig more to chat what happpend with this waste data.
 
 <p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Pre-processing/Extract-Barcode/result.png" alt="foo bar" title="train &amp; tracks" /></p>
 
@@ -31,8 +36,11 @@ perl extract-barcodes-withlinker.v2.pl -indir ./ -outdir ./ -sample test
 ```
 After running the scripts, you will find the following output files:
 <p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Pre-processing/Extract-Barcode/step2-output.png" alt="foo bar" title="train &amp; tracks" /></p>
+ 
+- ```test.barcodes.R1.fq.gz``` and ```test.barcodes.R2.fq.gz``` contain the Reads with both barcode A and B.
+- ```test.st.R1.fq.gz``` and ```test.st.R2.fq.gz``` is the st-pipeline ready files. 
 
-
+  
 A log file containing details number of barcode A and barcode B will also be generated in the output directory:
 
 <p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Pre-processing/Extract-Barcode/stat.png" alt="foo bar" title="train &amp; tracks" /></p>
