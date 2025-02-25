@@ -36,7 +36,7 @@ To extract the barcodes, run:
 ```
 perl extract-barcodes-withlinker.v2.pl -indir ./ -outdir ./ -sample test
 ```
-After running the scripts, you will find the following output files:
+After running the scripts, the following output files will be generated:
 <p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Pre-processing/Extract-Barcode/step2-output.png" alt="foo bar" title="train &amp; tracks" /></p>
  
 - ```test.barcodes.R1.fq.gz``` and ```test.barcodes.R2.fq.gz``` contain the Reads with both barcode A and B.
