@@ -30,7 +30,7 @@ To extract the barcodes, run:
 perl extract-barcodes-withlinker.v2.pl -indir ./ -outdir ./ -sample test
 ```
 After running the scripts, you will find the following output files:
-<p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Pre-processing/Extract-Barcode/outputfiles.png" alt="foo bar" title="train &amp; tracks" /></p>
+<p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Pre-processing/Extract-Barcode/step2-output.png" alt="foo bar" title="train &amp; tracks" /></p>
 
 
 A log file containing details number of barcode A and barcode B will also be generated in the output directory:
