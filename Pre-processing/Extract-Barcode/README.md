@@ -22,7 +22,7 @@ Example output:
 The extracted reads are categorized into files based on whether a linker was identified:
 <p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Pre-processing/Extract-Barcode/step1-output.png" alt="foo bar" title="train &amp; tracks" /></p>
 
-- ```test.with.linker.R1.fq.gz``` and ```test.with.linker.R2.fq.gz```: Reads containing an identified linker..
+- ```test.with.linker.R1.fq.gz``` and ```test.with.linker.R2.fq.gz```: Reads containing an identified linker.
 
 - ```test.without.linker.R1.fq.gz``` and ```test.without.linker.R2.fq.gz```: Reads without linker. These files can be further analyzed to understand potential data loss.
 
