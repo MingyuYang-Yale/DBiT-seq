@@ -40,7 +40,7 @@ After running the scripts, you will find the following output files:
 <p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Pre-processing/Extract-Barcode/step2-output.png" alt="foo bar" title="train &amp; tracks" /></p>
  
 - ```test.barcodes.R1.fq.gz``` and ```test.barcodes.R2.fq.gz``` contain the Reads with both barcode A and B.
-- ```test.st.R1.fq.gz``` and ```test.st.R2.fq.gz``` is the st-pipeline ready files. 
+- ```test.st.R1.fq.gz``` and ```test.st.R2.fq.gz``` is reformat the read file for compatibility with st-pipeline. you can directly use it as input of st-pipeline.
 
   
 A log file containing details number of barcode A and barcode B will also be generated in the output directory:
