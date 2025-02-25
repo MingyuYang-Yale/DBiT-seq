@@ -24,6 +24,8 @@ Example output:
 
 - ```test.without.linker.R1.fq.gz``` and ```test.without.linker.R2.fq.gz``` is the Read2 without identifiled linker, actually we can use this information to dig more to chat what happpend with this waste data.
 
+In test.with.linker.R2.fq.gz file:
+
 <p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Pre-processing/Extract-Barcode/result.png" alt="foo bar" title="train &amp; tracks" /></p>
 
 As shown in the result, the start position of the linker varies, appearing at positions 39, 40, and 41 in the test dataset.
