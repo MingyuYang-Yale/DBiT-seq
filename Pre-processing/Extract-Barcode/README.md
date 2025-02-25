@@ -12,7 +12,7 @@ conda activate PERLLIB
 conda install -y bioconda::perl-perlio-gzip
 ```
 ```
-perl extract-linker.pl -indir ./ -outdir ./ -sample test
+perl extract-linker.v2.pl -indir ./ -outdir ./ -sample test
 ```
 
 For this demonstration, we use a test dataset consisting of 10,000 reads, which is a subset of DBit-seq normal data.
@@ -27,9 +27,11 @@ Once the linker position is identified, the 8bp sequences immediately before and
 
 To extract the barcodes, run:
 ```
-perl extract-barcodes-withlinker.pl -indir ./ -outdir ./ -sample test
+perl extract-barcodes-withlinker.v2.pl -indir ./ -outdir ./ -sample test
 ```
-After running the script, the data with both barcodes information will be saved in the output folder as: ```test.barcodes.fq.gz```
+After running the scripts, you will find the following output files:
+<p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Pre-processing/Extract-Barcode/outputfiles.png" alt="foo bar" title="train &amp; tracks" /></p>
+
 
 A log file containing details number of barcode A and barcode B will also be generated in the output directory:
 
