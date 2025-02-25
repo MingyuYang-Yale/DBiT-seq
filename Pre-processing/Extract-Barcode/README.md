@@ -39,10 +39,10 @@ perl extract-barcodes-withlinker.v2.pl -indir ./ -outdir ./ -sample test
 After running the scripts, the following output files will be generated:
 <p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Pre-processing/Extract-Barcode/step2-output.png" alt="foo bar" title="train &amp; tracks" /></p>
  
-- ```test.barcodes.R1.fq.gz``` and ```test.barcodes.R2.fq.gz``` contain the Reads with both barcode A and B.
-- ```test.st.R1.fq.gz``` and ```test.st.R2.fq.gz``` is reformat the read file for compatibility with st-pipeline. you can directly use it as input of st-pipeline.
+- ```test.barcodes.R1.fq.gz``` and ```test.barcodes.R2.fq.gz```: Reads containing both Barcode A and Barcode B.
+- ```test.st.R1.fq.gz``` and ```test.st.R2.fq.gz```: Reformatted read files for compatibility with the st-pipeline. These files can be directly used as input for st-pipeline.
 
   
-A log file containing details number of barcode A and barcode B will also be generated in the output directory:
+Additionally, a log file containing details number of barcode A and barcode B will also be generated in the output directory:
 
 <p><img src="https://github.com/MingyuYang-Yale/DBiT-seq/blob/master/Pre-processing/Extract-Barcode/stat.png" alt="foo bar" title="train &amp; tracks" /></p>
